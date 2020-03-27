@@ -6,6 +6,8 @@ def nyc_pigeon_organizer(data)
     names = []
     names << data[:gender][:male][i]
     names << data[:gender][:female][i]
+    
+    i += 1
   end 
   
   
