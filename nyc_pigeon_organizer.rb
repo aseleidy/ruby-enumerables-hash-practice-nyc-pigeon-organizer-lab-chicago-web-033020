@@ -5,12 +5,12 @@ def nyc_pigeon_organizer(data)
   data.each do |attribute, values|
     values.each do |inner_key, names|
       names.each do |name|
-        binding.pry 
         new_hash[name] = {} if !new_hash[name]
+        new_hash[name][attribute] = [inner_key]
       end 
     end 
   end 
-  
+  binding.pry 
 end   
   # i = 0 
   # while i < data[:gender].length do 
