@@ -6,7 +6,8 @@ def nyc_pigeon_organizer(data)
     values.each do |inner_key, names|
       names.each do |name|
         new_hash[name] = {} if !new_hash[name]
-        new_hash[name][attribute] = [inner_key]
+        if new_hash[name][attribute]
+          new_hash[name][attribute] = [inner_key]  
       end 
     end 
   end 
