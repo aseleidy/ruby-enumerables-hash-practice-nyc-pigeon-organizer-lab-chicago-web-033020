@@ -26,9 +26,7 @@ end
     
   #   i += 1
   # end 
-  
-  
-end
+
 
   
   #data.each do |sort, (key, value)|
